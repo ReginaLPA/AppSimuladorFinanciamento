@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Sair"
+        android:title="Sair"/> <item
+    android:id="@+id/menu_Início"
+    android:title="Início"/>
+
+    <item
+        android:id="@+id/Simular_Veículo"
+        android:title="Simular Veículo"/>
+
+    <item
+        android:id="@+id/Simular_Residência"
+        android:title="Simular Residência">
+    </item>
+
+
+    <item
+        android:id="@+id/Sobre"
+        android:title="Sobre"/>
+
+
+
+</menu>

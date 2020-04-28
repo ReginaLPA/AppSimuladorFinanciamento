@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Veiculo">
+   <!-- android:background="@drawable/casa"
+    android:alpha="0.8"-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="181dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Simulador Veículo"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewValorVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Valor veículo: "
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNovo" />
+
+    <EditText
+        android:id="@+id/editTextValorVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toEndOf="@+id/textViewValorVeiculo"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxUsado" />
+
+    <TextView
+        android:id="@+id/textViewEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Entrada (mínimo  5%)"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValorVeiculo" />
+
+    <EditText
+        android:id="@+id/editTextentrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/textViewEntrada"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorVeiculo" />
+
+    <TextView
+        android:id="@+id/textViewQtdeParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Qtde  Parcelas: "
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEntrada" />
+
+    <EditText
+        android:id="@+id/editTextQtdeParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toEndOf="@+id/textViewQtdeParcelas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextentrada" />
+
+    <TextView
+        android:id="@+id/textViewRendaLiquida"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Renda Mensal"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQtdeParcelas" />
+
+    <EditText
+        android:id="@+id/editTextRendaLiquida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toEndOf="@+id/textViewRendaLiquida"
+        app:layout_constraintTop_toBottomOf="@+id/editTextQtdeParcelas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="Novo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUsado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Usado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxNovo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeVeiculo" />
+
+    <Button
+        android:id="@+id/btnSimularVeiculo"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_background"
+
+        android:text="Simular"
+        android:textColor="#ffff"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRendaLiquida" />
+
+    <TextView
+        android:id="@+id/textViewNomeVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
